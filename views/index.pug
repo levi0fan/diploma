@@ -1,0 +1,7 @@
+html
+    include blocks/head
+
+    body
+        h1= pageName
+        each link in links
+            a(href=link.href)= link.name

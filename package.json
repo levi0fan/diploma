@@ -1,0 +1,16 @@
+{
+  "name": "diploma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:levi0fan/diploma.git",
+  "author": "sam0sva1 <konstantus@live.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.4",
+    "pug": "^2.0.3"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  }
+}
