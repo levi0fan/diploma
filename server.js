@@ -13,12 +13,12 @@ app.get('/', function(req, res) {
 
 // About
 app.get('/about', function(req, res) {
-    res.render('about', { title: 'About' });
+    res.render('about', data.about);
 });
 
 // Location
 app.get('/location', function(req, res) {
-    res.render('index', data.about);
+    res.render('index', data.location);
 });
 
 app.listen(port, function() {
