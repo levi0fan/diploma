@@ -1,9 +1,14 @@
 const params = {
     title: 'Оч важно!',
-    pageName: 'Главная',
+    what: 'А это Главная страница',
     links: [
-        { name: 'About', href: '/about' },
-        { name: 'Location', href: '/location' },
+        { name: 'О проекте', href: '/about' },
+        { name: 'Место', href: '/location' },
+    ],
+    peshka: [
+    fir: 'На этом сайте много чего есть',
+    sec: '',
+    thir: '',
     ],
 };
 

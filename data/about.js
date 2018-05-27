@@ -1,8 +1,15 @@
-module.exports = {
+const paramab = {
     title: 'О проекте!',
-    pageName: 'About',
+    what: 'Тут напиано о проекте',
     links: [
-        { name: 'Main', href: '/' },
-        { name: 'Location', href: '/location' },
+        { name: 'Главная', href: '/' },
+        { name: 'Место', href: '/location' },
+    ],
+    peshka: [
+    fir: 'Он пишется достаточно интересно и мне это даже нравится',
+    sec: 'Есть главная.',
+    thir: 'Есть локация.',
     ],
 };
+
+module.exports = paramab;
