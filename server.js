@@ -6,19 +6,11 @@ const port = 8080;
 
 app.set('view engine', 'pug');
 
+app.use(express.static('static'));
+
 // Get info
 app.get('/', function(req, res) {
     res.render('main', data.main);
-});
-
-// About
-app.get('/about', function(req, res) {
-    res.render('about', data.about);
-});
-
-// Location
-app.get('/location', function(req, res) {
-    res.render('main', data.location);
 });
 
 app.listen(port, function() {
