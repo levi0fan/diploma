@@ -8,7 +8,7 @@ app.set('view engine', 'pug');
 
 // Get info
 app.get('/', function(req, res) {
-    res.render('index', data.main);
+    res.render('main', data.main);
 });
 
 // About
@@ -18,7 +18,7 @@ app.get('/about', function(req, res) {
 
 // Location
 app.get('/location', function(req, res) {
-    res.render('index', data.about);
+    res.render('main', data.about);
 });
 
 app.listen(port, function() {

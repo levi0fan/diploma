@@ -1,0 +1,5 @@
+@import url('./blocks/header.css');
+
+.main {
+    background-color: red;
+}
