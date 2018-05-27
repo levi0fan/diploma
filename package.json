@@ -1,9 +1,8 @@
 {
   "name": "diploma",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:levi0fan/diploma.git",
-  "author": "sam0sva1 <konstantus@live.ru>",
+  "author": "Leonid Novosad",
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.3",
