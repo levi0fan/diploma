@@ -7,4 +7,8 @@ gulp.task('css', function() {
         .pipe(gulp.dest('./static/css'));
 });
 
+gulp.task('watch', ['css'], function(){
+    gulp.watch('styles/**/*.css', ['css']);
+});
+
 gulp.task('default', ['css']);

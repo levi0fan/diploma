@@ -13,6 +13,7 @@
   },
   "scripts": {
     "start": "nodemon server.js",
-    "build-css": "gulp"
+    "build-css": "gulp",
+    "watch-css": "gulp watch"
   }
 }

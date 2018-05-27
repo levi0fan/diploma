@@ -1,7 +1,7 @@
 html
     include blocks/head
-
     body
-      include blocks/header
-      include blocks/portal
-      include blocks/notall
+      h1= title
+      each link in links
+          h3
+            a(href=link.href)= link.name
