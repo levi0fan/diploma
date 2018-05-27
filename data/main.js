@@ -1,10 +1,11 @@
 const params = {
-    title: 'Подготовка к ЕГЭ по "Информатике"',
+    tabTitle: 'Подготовка к ЕГЭ по "Информатике"',
+    title: 'Обучающий интернет-ресурс по подготовке к ЕГЭ по "Информатике"',
     links: [
-        { name: 'Теория', href: '/about' },
-        { name: 'Медиа', href: '/location' },
-        { name: 'Практика', href: '/location' },
-        { name: 'Обратная связь', href: '/location' },
+        { name: 'Теория', href: '/teoria' },
+        { name: 'Медиа', href: '/media' },
+        { name: 'Практика', href: '/practicka' },
+        { name: 'Обратная связь', href: '/community' },
     ],
 };
 
