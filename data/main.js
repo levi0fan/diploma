@@ -1,14 +1,10 @@
 const params = {
-    title: 'Оч важно!',
-    what: 'А это Главная страница',
+    title: 'Подготовка к ЕГЭ по "Информатике"',
     links: [
-        { name: 'О проекте', href: '/about' },
-        { name: 'Место', href: '/location' },
-    ],
-    peshka: [
-    fir: 'На этом сайте много чего есть',
-    sec: '',
-    thir: '',
+        { name: 'Теория', href: '/about' },
+        { name: 'Медиа', href: '/location' },
+        { name: 'Практика', href: '/location' },
+        { name: 'Обратная связь', href: '/location' },
     ],
 };
 

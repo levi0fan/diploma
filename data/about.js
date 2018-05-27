@@ -5,11 +5,11 @@ const paramab = {
         { name: 'Главная', href: '/' },
         { name: 'Место', href: '/location' },
     ],
-    peshka: [
+    peshka: {
     fir: 'Он пишется достаточно интересно и мне это даже нравится',
     sec: 'Есть главная.',
     thir: 'Есть локация.',
-    ],
+  },
 };
 
 module.exports = paramab;
