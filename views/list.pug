@@ -1,0 +1,9 @@
+html
+  include blocks/head
+
+  body
+    h1= title
+    p= info
+    each link in links
+        h3
+          a(class ='line' href=link.href)= link.name

@@ -1,0 +1,15 @@
+html
+  include blocks/head
+
+  body
+    h1= title
+    p= info
+
+    each item in content
+      case item.type
+        when 'header'
+          h2= item.text
+        when 'parag'
+          p= item.text
+        when 'img'
+          img(src= item.link alt= item.desc)

@@ -1,9 +1,9 @@
 const main = require('./main');
-const about = require('./about');
-const location = require('./location');
+const theory = require('./theory');
+const themes = require('./themes');
 
 module.exports = {
     main,
-    about,
-    location,
+    theory,
+    themes,
 };
