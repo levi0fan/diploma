@@ -3,13 +3,23 @@
 }
 
 body {
-    flex-direction: column;
+    background-color: #57b0ff;
 }
 
 h1 {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-
-a {
-    background-color: purple;
+.flex-container{
+  display: -webkit-flex;
+  display: flex;
+  width: 1920px;
+  background-color: green;
+  margin: 40px auto;
+}
+.flex-item{
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  color: #fff;
 }

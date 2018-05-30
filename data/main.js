@@ -5,7 +5,7 @@ const params = {
     links: [
         { name: 'Теория', href: '/theory' },
         { name: 'Медиа', href: '/media' },
-        { name: 'Практика', href: '/practicka' },
+        { name: 'Практика', href: '/practice' },
         { name: 'Обратная связь', href: '/community' },
     ],
 };

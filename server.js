@@ -23,6 +23,10 @@ app.get('/theory', function(req, res) {
     res.render('list', data.theory);
 });
 
+app.get('/practice', function(req, res) {
+    res.render('list', data.practice);
+});
+
 app.listen(port, function() {
     console.log(`Server runs on http://localhost:${port}`);
 });
