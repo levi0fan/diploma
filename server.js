@@ -29,7 +29,6 @@ app.get('/theory', function(req, res) {
 app.post('/practice/:quiz/result', function(req, res) {
     const quiz = req.params.quiz;
     const params = data.quizes[quiz];
-    console.log('res.body', req.body);
     const answers = req.body;
     const propList = Object.keys(answers);
 
@@ -42,8 +41,10 @@ app.post('/practice/:quiz/result', function(req, res) {
 
     const result = {
         tabTitle: 'Результат теста ' + params.tabTitle,
+        theory: params.tabTitle,
         styleFile: 'result',
         title: 'Результаты теста по теме ' + '"Системы счисления"',
+        name: params.name,
     };
 
     result.questions = params.questions.map((quest, idx) => {
@@ -55,8 +56,6 @@ app.post('/practice/:quiz/result', function(req, res) {
             correct: quest.correct,
         };
     });
-
-    console.log('result', result);
 
     res.render('result', result);
 }); 

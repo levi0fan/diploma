@@ -5,6 +5,7 @@ html
     h1= title
 
     .result
+        - let counter = 0
         each quest in questions
             .result__clause
                 .result__question
@@ -15,9 +16,15 @@ html
                 - const result = quest.correct === quest.selected
                 .result__verdict
                     if result
+                        - counter++
                         span.result__correct= 'Правильный ответ'
                     else
                         span.result__wrong= 'Неверный ответ'
+        if counter === questions.length
+            .key_point!= `Хорошая работа. Не забудь повторить теорию. <a href="/theory/${name}">${theory}</a>`
+        else
+            .key_point!= `Неплохо. Но можно и лучше. Почитай-ка теорию. <a href="/theory/${name}">${theory}</a>`
 
+        
 
 
