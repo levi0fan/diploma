@@ -1,0 +1,23 @@
+html
+  include blocks/head
+
+  body
+    h1= title
+
+    .result
+        each quest in questions
+            .result__clause
+                .result__question
+                    div.result__question-text!= quest.text
+                    span.result__answer-label= 'Ваш вариант:'
+                    span.result__answer= quest.selectedText
+
+                - const result = quest.correct === quest.selected
+                .result__verdict
+                    if result
+                        span.result__correct= 'Правильный ответ'
+                    else
+                        span.result__wrong= 'Неверный ответ'
+
+
+

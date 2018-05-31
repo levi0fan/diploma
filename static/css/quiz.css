@@ -1,0 +1,54 @@
+body {
+    font-size: 20px;
+	font-family: sans-serif;
+	color: #333;
+}
+
+.quiz {
+    margin-top: 20px;
+}
+
+.quiz__link {
+    display: block;
+    color: #333;
+}
+
+.quiz__link:visited {
+    color: #333;
+}
+
+.quiz__link:hover {
+    text-decoration: none;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question__text {
+    font-weight: 600;
+}
+
+.question__answer {
+    display: block;
+}
+
+#submit {
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #279;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+#submit:disabled {
+    opacity: .5;
+}
+
+#submit:hover {
+	background-color: #38a;
+}

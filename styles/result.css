@@ -1,0 +1,43 @@
+body {
+    font-size: 20px;
+	font-family: sans-serif;
+	color: #333;
+}
+
+.result {
+    
+}
+
+.result__clause {
+    margin-bottom: 20px;
+}
+
+.result__question {
+    font-weight: 600;
+}
+
+.result__question-text {
+    margin-bottom: 10px;
+}
+
+.result__answer-label {
+    margin-right: 10px;
+}
+
+.result__answer {
+    
+}
+
+.result__verdict {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.result__correct {
+    color: #26A65B;
+}
+
+.result__wrong {
+    color: #F03434;
+}
