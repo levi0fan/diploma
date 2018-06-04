@@ -76,7 +76,115 @@ const params = {
             ],
             correct: 'syst_1',
         },
+        {
+            text: 'Переведите в восьмеричную систему счисления число 121<sup><small>10</small></sup>.',
+            answers: [
+                {
+                    text: '265',
+                    code: 'syst_1',
+                },
+                {
+                    text: '172',
+                    code: 'syst_2',
+                },
+                {
+                    text: '171',
+                    code: 'syst_3',
+                },
+            ],
+            correct: 'syst_3',
+        },
+        {
+            text: 'Переведите в десятичную систему счисления число 60<sup><small>8</small></sup>.',
+            answers: [
+                {
+                    text: '54',
+                    code: 'syst_1',
+                },
+                {
+                    text: '48',
+                    code: 'syst_2',
+                },
+                {
+                    text: '60',
+                    code: 'syst_3',
+                },
+            ],
+            correct: 'syst_2',
+        },
+        {
+            text: 'Переведите в десятичную систему счисления число 32<sup><small>16</small></sup>.',
+            answers: [
+                {
+                    text: '36',
+                    code: 'syst_1',
+                },
+                {
+                    text: '50',
+                    code: 'syst_2',
+                },
+                {
+                    text: '60',
+                    code: 'syst_3',
+                },
+            ],
+            correct: 'syst_2',
+        },
+        {
+            text: 'Переведите в шестнадцатеричную систему счисления число 72<sup><small>10</small></sup>.',
+            answers: [
+                {
+                    text: '48',
+                    code: 'syst_1',
+                },
+                {
+                    text: '110',
+                    code: 'syst_2',
+                },
+                {
+                    text: '35',
+                    code: 'syst_3',
+                },
+            ],
+            correct: 'syst_1',
+        },
+        {
+            text: 'Переведите в десятичную систему счисления число 50<sup><small>16</small></sup>.',
+            answers: [
+                {
+                    text: '80',
+                    code: 'syst_1',
+                },
+                {
+                    text: '70',
+                    code: 'syst_2',
+                },
+                {
+                    text: '94',
+                    code: 'syst_3',
+                },
+            ],
+            correct: 'syst_1',
+        },
+        {
+            text: 'Переведите в десятичную систему счисления число 1010101<sup><small>2</small></sup>.',
+            answers: [
+                {
+                    text: '32',
+                    code: 'syst_1',
+                },
+                {
+                    text: '85',
+                    code: 'syst_2',
+                },
+                {
+                    text: '67',
+                    code: 'syst_3',
+                },
+            ],
+            correct: 'syst_2',
+        },
     ],
 }
-  
+
   module.exports = params;
