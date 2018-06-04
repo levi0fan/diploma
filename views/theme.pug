@@ -11,5 +11,11 @@ html
           h2= item.text
         when 'parag'
           p= item.text
+        when 'size_3'
+          h3= item.text
+        when 'table'
+          ul= item.text
+        when 'line'
+          li= item.text
         when 'img'
           img(src= item.link alt= item.desc)

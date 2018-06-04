@@ -7,6 +7,7 @@ const port = 8080;
 
 app.set('view engine', 'pug');
 
+
 app.use(express.static('static'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -58,7 +59,7 @@ app.post('/practice/:quiz/result', function(req, res) {
     });
 
     res.render('result', result);
-}); 
+});
 
 app.get('/practice/:quiz', function(req, res) {
     const quiz = req.params.quiz;
