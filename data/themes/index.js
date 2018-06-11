@@ -5,7 +5,7 @@ const numinf = require('./numinf');
 const search = require('./search');
 const model = require('./model');
 const cod = require('./cod');
-const teoralg = require('./teoralg');
+const theoralg = require('./theoralg');
 const prog = require('./prog');
 
 module.exports = {
@@ -16,6 +16,6 @@ module.exports = {
     search,
     model,
     cod,
-    teoralg,
+    theoralg,
     prog,
 };
