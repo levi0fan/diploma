@@ -3,7 +3,7 @@ const logalg = require('./logalg');
 const arch = require('./arch');
 const numinf = require('./numinf');
 const search = require('./search');
-const model = require('./model');
+const mathmodel = require('./mathmodel');
 const cod = require('./cod');
 const theoralg = require('./theoralg');
 const prog = require('./prog');
@@ -14,7 +14,7 @@ module.exports = {
     arch,
     numinf,
     search,
-    model,
+    mathmodel,
     cod,
     theoralg,
     prog,
