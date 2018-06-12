@@ -8,10 +8,10 @@ const paramab = {
         { name: 'Логика и алгоритмы', href: '/practice/logalg' },
         { name: 'Архитектура компьютеров и компьютерных сетей', href: '/practice/arch' },
         { name: 'Обработка числовой информации', href: '/practice/numinf' },
-        { name: 'Технологии поиска и хранения информации', href: '/practice/serch' },
-        { name: 'Моделирование и компьютерный эксперимент', href: '/practice/model' },
+        { name: 'Технологии поиска и хранения информации', href: '/practice/search' },
+        { name: 'Моделирование и компьютерный эксперимент', href: '/practice/mathmodel' },
         { name: 'Информация и её кодирование', href: '/practice/cod' },
-        { name: 'Элементы теории алгоритмов', href: '/practice/teoralg' },
+        { name: 'Элементы теории алгоритмов', href: '/practice/theoralg' },
         { name: 'Программирование', href: '/practice/prog' },
     ],
 };

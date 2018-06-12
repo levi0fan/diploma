@@ -27,6 +27,10 @@ app.get('/theory', function(req, res) {
     res.render('list', data.theory);
 });
 
+app.get('/community', function(req, res) {
+    res.render('voice');
+});
+
 app.post('/practice/:quiz/result', function(req, res) {
     const quiz = req.params.quiz;
     const params = data.quizes[quiz];

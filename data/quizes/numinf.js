@@ -1,188 +1,188 @@
 const params = {
     tabTitle: 'Обработка числовой информации',
     styleFile: 'quiz',
-    name: 'logalg',
+    name: 'numinf',
     title: 'Практика по теме "Обработка числовой информации"',
     questions: [
         {
-            text: '',
+            text: 'Что относится к аппаратным средствам ввода числовой информации?',
             answers: [
                 {
-                    text: '',
+                    text: 'клавиатура',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'мышка',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'флешка',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
+            correct: 'syst_1',
         },
         {
-            text: '',
+            text: 'Что относится к аппаратным средствам вывода числовой информации?',
             answers: [
                 {
-                    text: '',
+                    text: 'принтер',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'факс',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'плоттер',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
+            correct: 'syst_1',
         },
         {
-            text: '',
+            text: 'Что относится к аппаратным средствам обработки числовой информации?',
             answers: [
                 {
-                    text: '',
+                    text: 'процессор',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'принтер',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'видеокарта',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
+            correct: 'syst_1',
         },
         {
-            text: '',
+            text: 'Что не относится к программным средствам ввода и обработки числовой информации?',
             answers: [
                 {
-                    text: '',
+                    text: 'электронные таблицы (Supercalc, Exel, Lotus и др.)',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'специализированные математические пакеты прикладных программ (Machcad, Matlab, Maple и др.)',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'инженерный калькулятор',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
+            correct: 'syst_3',
         },
         {
-            text: '',
+            text: 'Специализированное программное приложение, предназначенное для произведения вычислений – это',
             answers: [
                 {
-                    text: '',
+                    text: 'электронный калькулятор',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'электронный журнал',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'электронная книга',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
+            correct: 'syst_1',
         },
         {
-            text: '',
+            text: 'Можно ли использовать числовые данные электронных калькуляторов в работе других приложений?',
             answers: [
                 {
-                    text: '',
+                    text: 'можно',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'нельзя',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'можно с использованием буфера обмена операционной системы',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
+            correct: 'syst_3',
         },
         {
-            text: '',
+            text: 'Приложения, работающие в диалоговом режиме, хранящие и обрабатывающие данные в прямоугольных таблицах  – это',
             answers: [
                 {
-                    text: '',
+                    text: 'электронные таблицы Microsoft Excel,  StarCalc ',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'электронные таблицы Microsoft Word',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'таблицы RAL',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
+            correct: 'syst_1',
         },
         {
-            text: '',
+            text: 'Как называется ячейка таблицы, с которой производится какое-либо действие?',
             answers: [
                 {
-                    text: '',
+                    text: 'активная',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'действующая',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'красная',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
+            correct: 'syst_1',
         },
         {
-            text: '',
+            text: 'Что должно обязательно входить в формулу таблицы?',
             answers: [
                 {
-                    text: '',
+                    text: 'знак равенства',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'текст',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'имя ячеек',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
+            correct: 'syst_1',
         },
         {
-            text: '',
+            text: 'Какие программные средства ввода и обработки числовой информации могут решить практически любую математическую задачу и представить результаты в табличном или графическом виде?',
             answers: [
                 {
-                    text: '',
+                    text: 'математические пакеты прикладных программ',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'электронные таблицы',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'программы для статистической обработки данных',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
+            correct: 'syst_1',
         },
     ],
 }

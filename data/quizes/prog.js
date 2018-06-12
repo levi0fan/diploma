@@ -1,188 +1,98 @@
 const params = {
     tabTitle: 'Программирование',
     styleFile: 'quiz',
-    name: 'logalg',
+    name: 'prog',
     title: 'Практика по теме "Программирование"',
     questions: [
         {
-            text: '',
+            text: 'Программи́рование - это:',
             answers: [
                 {
-                    text: '',
+                    text: 'процесс и искусство создания компьютерных программ с помощью языков программирования',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'метод воздействия на сеть интернет',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'процесс получения информации из компьютерной сети',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
+            correct: 'syst_1',
         },
         {
-            text: '',
+            text: 'В узком смысле слова, программирование - это:',
             answers: [
                 {
-                    text: '',
+                    text: 'реализация одного или нескольких взаимосвязанных алгоритмов на некотором языке программирования',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'активизация или отключение отдельных частей сети интернет ',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'поиск и получение информации соответствующей фильтру из компьютерной сети',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
+            correct: 'syst_1',
         },
         {
-            text: '',
+            text: 'Большая часть работы программиста связана с:',
             answers: [
                 {
-                    text: '',
+                    text: 'написанием исходного кода на одном из языков программирования',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'манипуляциями над сетью интернет',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'сканированием компьютерных сетей',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
+            correct: 'syst_1',
         },
         {
-            text: '',
+            text: 'В чём состоит исскуство программирования?',
             answers: [
                 {
-                    text: '',
+                    text: 'в творческом подходе программиста',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'в выборе наиболее подходящего языка программирования для решения имеющейся задачи',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'в индивидуальном подходе программиста',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
+            correct: 'syst_2',
         },
         {
-            text: '',
+            text: 'Единственный язык, напрямую выполняемый процессором — это',
             answers: [
                 {
-                    text: '',
+                    text: 'латиница',
                     code: 'syst_1',
                 },
                 {
-                    text: '',
+                    text: 'язык программирования',
                     code: 'syst_2',
                 },
                 {
-                    text: '',
+                    text: 'машинный язык',
                     code: 'syst_3',
                 },
             ],
-            correct: 'syst_',
-        },
-        {
-            text: '',
-            answers: [
-                {
-                    text: '',
-                    code: 'syst_1',
-                },
-                {
-                    text: '',
-                    code: 'syst_2',
-                },
-                {
-                    text: '',
-                    code: 'syst_3',
-                },
-            ],
-            correct: 'syst_',
-        },
-        {
-            text: '',
-            answers: [
-                {
-                    text: '',
-                    code: 'syst_1',
-                },
-                {
-                    text: '',
-                    code: 'syst_2',
-                },
-                {
-                    text: '',
-                    code: 'syst_3',
-                },
-            ],
-            correct: 'syst_',
-        },
-        {
-            text: '',
-            answers: [
-                {
-                    text: '',
-                    code: 'syst_1',
-                },
-                {
-                    text: '',
-                    code: 'syst_2',
-                },
-                {
-                    text: '',
-                    code: 'syst_3',
-                },
-            ],
-            correct: 'syst_',
-        },
-        {
-            text: '',
-            answers: [
-                {
-                    text: '',
-                    code: 'syst_1',
-                },
-                {
-                    text: '',
-                    code: 'syst_2',
-                },
-                {
-                    text: '',
-                    code: 'syst_3',
-                },
-            ],
-            correct: 'syst_',
-        },
-        {
-            text: '',
-            answers: [
-                {
-                    text: '',
-                    code: 'syst_1',
-                },
-                {
-                    text: '',
-                    code: 'syst_2',
-                },
-                {
-                    text: '',
-                    code: 'syst_3',
-                },
-            ],
-            correct: 'syst_',
+            correct: 'syst_3',
         },
     ],
 }
