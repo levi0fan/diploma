@@ -6,7 +6,7 @@ const params = {
         { name: 'Теория', href: '/theory' },
         { name: 'Видео-уроки', href: '/media' },
         { name: 'Практика', href: '/practice' },
-        { name: 'Обратная связь', href: '/community' },
+        { name: 'Обратная связь', href: '/feedback' },
     ],
 };
 

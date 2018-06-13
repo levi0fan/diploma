@@ -27,7 +27,7 @@ app.get('/theory', function(req, res) {
     res.render('list', data.theory);
 });
 
-app.get('/community', function(req, res) {
+app.get('/feedback', function(req, res) {
     res.render('feedback', data.feedback);
 });
 
@@ -73,6 +73,12 @@ app.get('/practice/:quiz', function(req, res) {
 
 app.get('/practice', function(req, res) {
     res.render('list', data.practice);
+});
+
+app.post('/feedback', function(req, res) {
+    console.log('form', req.body);
+
+    res.send('<h1>Спасибо вам за внимание к нашему ресурсу!</h1>');
 });
 
 app.listen(port, function() {
