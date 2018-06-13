@@ -23,8 +23,7 @@ html
         if counter === questions.length
             .key_point!= `Хорошая работа. Не забудь повторить теорию. <a href="/theory/${name}">${theory}</a>`
         else
+          if counter > 6
             .key_point!= `Неплохо. Но можно и лучше. Почитай-ка теорию. <a href="/theory/${name}">${theory}</a>`
-
-        
-
-
+          else
+            .key_point!= `Слабовато. Поготовься по лучше. Вот ссылка на тему. <a href="/theory/${name}">${theory}</a>`

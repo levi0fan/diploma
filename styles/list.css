@@ -9,8 +9,8 @@ body {
 
 .flex_box{
   background-color: #57b0ff;
-  box-shadow: 0px 0px 20px rgba(128,128,128,0.7);
-  border-radius: 100px;
+  /* box-shadow: 0px 0px 20px rgba(128,128,128,0.7); */
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   margin: 50px;
@@ -67,9 +67,14 @@ a:active {
 }
 
 .head {
-  border: 2px double black;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.head__title {
+
+}
+
+.head__info {
 
 }

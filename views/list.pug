@@ -3,8 +3,9 @@ html
 
   body
     .flex_box
-      h1.head= title
-      p.info= info
+      .head
+        h1.head__title= title
+        p.head__info= info
       .cont_box
         each link in links
             h3.link
