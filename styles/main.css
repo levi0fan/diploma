@@ -4,7 +4,7 @@ body {
     background-color: #2673ef;
     display: flex;
     justify-content: center;
-
+    font-family: sans-serif;
 }
 
 
@@ -33,21 +33,21 @@ body {
 
 .link {
   width: 15%;
-  box-shadow: 0px 0px 20px rgba(128,128,128,0.7);
+  box-shadow: 0px 0px 10px rgb(0,0,0);
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  /* padding-left: 40px;
-  padding-top: 20px; */
+  padding-left: 5%;
+  background-color: #2673ef;
 }
 
 .link:hover {
   transform: scale(1.5);
-}
-
-.link:active{
   a(href=link.href)= link.name;
 }
+
+
 a {
   text-decoration: none;
   color: black;

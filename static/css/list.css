@@ -1,7 +1,78 @@
 .header {
     background-color: purple;
 }
+
+
 body {
-    
-    background-color: #57b0ff;
+    background-color: #2673ef;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.flex_box{
+  background-color: #57b0ff;
+  box-shadow: 0px 0px 20px rgba(128,128,128,0.7);
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1024px;
+  padding: 100px;
+}
+
+.cont_box {
+  width: 100%;
+  background-color: #57b0ff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+
+}
+
+.link {
+  width: 35%;
+  height: 5%;
+  box-shadow: 0px 0px 10px rgb(0,0,0);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-left: 40px;
+  padding-top: 20px; */
+  background-color: #2673ef;
+}
+
+.link:hover {
+  transform: scale(1.5);
+  a(href=link.href)= link.name;
+}
+
+.link:active{
+  a(href=link.href)= link.name;
+}
+a {
+  padding: 2%;
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:active {
+  text-decoration: none;
+  color: blue;
+}
+
+.head {
+  border: 2px double black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+
 }

@@ -2,8 +2,10 @@ html
   include blocks/head
 
   body
-    h1= title
-    p= info
-    each link in links
-        h3
-          a(class ='line' href=link.href)= link.name
+    .flex_box
+      h1.head= title
+      p.info= info
+      .cont_box
+        each link in links
+            h3.link
+              a(class ='line' href=link.href)= link.name
