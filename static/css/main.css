@@ -157,8 +157,6 @@ body {
 
 .container {
   background-color: #2673ef;
-  // background-color: #57b0ff;
-  // box-shadow: 0px 0px 20px rgba(128,128,128,0.7);
   border-radius: 40px;
   display: flex;
   flex-direction: column;

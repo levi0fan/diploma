@@ -2,11 +2,10 @@ html
   include blocks/head
 
   body
-    .flex_box
+    .container
       .head
         h1.head__title= title
         p.head__info= info
-      .cont_box
+      .links
         each link in links
-            h3.link
-              a(class ='line' href=link.href)= link.name
+            a.links__link(class ='line' href=link.href)= link.name
