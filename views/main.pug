@@ -1,9 +1,9 @@
 html
     include blocks/head
     body
-      .main-box
-        h1.head= title
-        .second-box
+      .container
+        .head
+          h1.head__title= title
+        .links
           each link in links
-              h3.link
-                a(href=link.href)= link.name
+            a.links__link(href=link.href)= link.name

@@ -1,36 +1,7 @@
 const express = require('express');
-const app = express();
-var bodyParser = require('body-parser');
+const router = express.Router();
 
-const data = require('./data');
-const port = 8080;
-
-app.set('view engine', 'pug');
-
-app.use(express.static('static'));
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
-// Get info
-app.get('/', function(req, res) {
-    res.render('main', data.main);
-});
-
-app.get('/theory/:name', function(req, res) {
-    const name = req.params.name;
-    const params = data.themes[name];
-    res.render('theme', params);
-});
-
-app.get('/theory', function(req, res) {
-    res.render('list', data.theory);
-});
-
-app.get('/community', function(req, res) {
-    res.render('feedback', data.feedback);
-});
-
-app.post('/practice/:quiz/result', function(req, res) {
+router.post('/practice/:quiz/result', function(req, res) {
     const quiz = req.params.quiz;
     const params = data.quizes[quiz];
     const answers = req.body;
@@ -64,16 +35,14 @@ app.post('/practice/:quiz/result', function(req, res) {
     res.render('result', result);
 });
 
-app.get('/practice/:quiz', function(req, res) {
+router.get('/practice/:quiz', function(req, res) {
     const quiz = req.params.quiz;
     const params = data.quizes[quiz];
     res.render('quiz', params);
 });
 
-app.get('/practice', function(req, res) {
+router.get('/practice', function(req, res) {
     res.render('list', data.practice);
 });
 
-app.listen(port, function() {
-    console.log(`Server runs on http://localhost:${port}`);
-});
+module.exports = router;
