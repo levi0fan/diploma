@@ -1,0 +1,56 @@
+html
+    include blocks/head
+
+    body
+        h1= title
+        p= info
+
+        div.feedback
+            form.feedback__form(method="post" onsubmit="return checkForm(this);")
+                label(for="feedback__name") Имя:
+                    input#feedback__name(type="text" placeholder="Введите ваше имя" name="name")
+                
+                label(for="feedback__email") Email:
+                    input#feedback__email(type="text" placeholder="Введите ваш email" name="email")
+                
+                label(for="feedback__message") Ваше сообщение:
+                    textarea#feedback__message(placeholder="Введите текст" name="message")
+
+                button.btn.btn-primary(type='submit') Оставить сообщение
+
+        script.
+            function checkForm(obj)
+                var return_value = true;
+                // регулярное выражение, для проверки почтового ящика
+                var reg_mail = /[0-9a-z_]+@[0-9a-z_^.]+.[a-z]{2,3}/i
+                // регулярное выражение, для проверки отправителя
+                var reg_sender = /[a-z]+/i
+                // заносим значение поля почтовый ящик в переменную mail
+                var mail = obj.mail.value
+                // заносим значение поля отправитель в переменную sender
+                var sender = obj.fio.value
+                // заносим значение поля сообщение в переменную msg
+                var msg = obj.msg.value
+                // объявляем переменную куда будет заносится текст сообщения
+                var error_msg = "Не корректно заполнены поля: "
+
+                //проверка поля отправитель
+                if(reg_sender.exec(sender) == null && sender =="")
+                    error_msg += "имя "
+                    return_value = false
+
+                //проверка поля почтовый ящик
+                if(reg_mail.exec(mail) == null)
+                    error_msg += "email "
+                    return_value = false
+
+                //проверка поля текст сообщения
+                if(msg == "")
+                    error_msg += "сообщение "
+                    return_value = false
+
+                //проверка на наличие ошибок, если возникла ошибка ввыводим текст сообщения
+                if(!return_value)
+                    alert(error_msg)
+
+                return return_value;

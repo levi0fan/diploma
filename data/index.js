@@ -3,6 +3,7 @@ const theory = require('./theory');
 const themes = require('./themes');
 const practice = require('./practice');
 const quizes = require('./quizes');
+const feedback = require('./feedback');
 
 module.exports = {
     main,
@@ -10,4 +11,5 @@ module.exports = {
     themes,
     practice,
     quizes,
+    feedback,
 };
