@@ -1,7 +1,9 @@
 html
     include blocks/head
     body
-      h1= title
-      each link in links
-          h3
-            a(href=link.href)= link.name
+      .main-box
+        h1.head= title
+        .second-box
+          each link in links
+              h3.link
+                a(href=link.href)= link.name

@@ -1,23 +1,62 @@
 @import url('./blocks/header.css');
 
 body {
-    background-color: #57b0ff;
+    background-color: #2673ef;
+    display: flex;
+    justify-content: center;
+
 }
 
-h1 {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.flex-container{
-  display: -webkit-flex;
+
+.main-box{
+  background-color: #57b0ff;
+  box-shadow: 0px 0px 20px rgba(128,128,128,0.7);
+  border-radius: 100px;
   display: flex;
-  width: 1920px;
-  background-color: green;
-  margin: 40px auto;
+  flex-direction: column;
+  margin: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.flex-item{
-  background-color: red;
-  width: 100px;
-  height: 100px;
-  margin: 5px;
-  color: #fff;
+
+.head{
+  margin: 50px;
+
+}
+
+.second-box {
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.link {
+  width: 15%;
+  box-shadow: 0px 0px 20px rgba(128,128,128,0.7);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  /* padding-left: 40px;
+  padding-top: 20px; */
+}
+
+.link:hover {
+  transform: scale(1.5);
+}
+
+.link:active{
+  a(href=link.href)= link.name;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:active {
+  text-decoration: none;
+  color: blue;
 }
