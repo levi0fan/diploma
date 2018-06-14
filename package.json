@@ -10,6 +10,7 @@
     "gulp": "^3.9.1",
     "gulp-cssimport": "^6.0.1",
     "nodemailer": "^4.6.6",
+    "nodemailer-smtp-transport": "^2.7.4",
     "nodemon": "^1.17.4",
     "pug": "^2.0.3"
   },
