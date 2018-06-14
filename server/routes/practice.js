@@ -1,7 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-router.post('/practice/:quiz/result', function(req, res) {
+const data = require('../data');
+
+router.post('/:quiz/result', function(req, res) {
     const quiz = req.params.quiz;
     const params = data.quizes[quiz];
     const answers = req.body;
@@ -35,13 +37,13 @@ router.post('/practice/:quiz/result', function(req, res) {
     res.render('result', result);
 });
 
-router.get('/practice/:quiz', function(req, res) {
+router.get('/:quiz', function(req, res) {
     const quiz = req.params.quiz;
     const params = data.quizes[quiz];
     res.render('quiz', params);
 });
 
-router.get('/practice', function(req, res) {
+router.get('/', function(req, res) {
     res.render('list', data.practice);
 });
 

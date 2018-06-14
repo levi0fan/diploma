@@ -85,12 +85,16 @@ body {
 .question__text {
     font-weight: 600;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .question__answer {
-    display: block;
+    display: flex;
     margin: 10px;
+}
+
+.question__checkbox {
+  margin-right: 10px;
 }
 
 #submit {

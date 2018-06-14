@@ -9,12 +9,13 @@
     "express": "^4.16.3",
     "gulp": "^3.9.1",
     "gulp-cssimport": "^6.0.1",
+    "nodemailer": "^4.6.6",
     "nodemon": "^1.17.4",
     "pug": "^2.0.3"
   },
   "scripts": {
     "start": "nodemon server.js",
-    "build-css": "gulp",
-    "watch-css": "gulp watch"
+    "build": "gulp",
+    "watch": "gulp watch"
   }
 }

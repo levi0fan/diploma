@@ -15,7 +15,7 @@ html
                   .question__text!= quest.text
                   each answer in quest.answers
                       label.question__answer
-                          input(type="radio" name=`question_${idx}` value= answer.code)
+                          input.question__checkbox(type="radio" name=`question_${idx}` value= answer.code)
                           = answer.text
           button(id="submit" type="submit" disabled)= 'Проверить результат'
 
