@@ -1,48 +1,113 @@
+@import url('./reset.css');
+@import url('./blocks/header.css');
+
 body {
-    font-size: 20px;
-	font-family: sans-serif;
-	color: #333;
+  background-color: #57b0ff;
+  display: flex;
+  align-items: flex-start;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1110px;
+  min-width: 900px;
+  background-color: #2673ef;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.head {
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.head__title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.links__link {
+  width: 200px;
+  height: 70px;
+  margin-right: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  // background-color: #2673ef;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  transition: all .3s ease;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.links__link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.links__link:hover {
+    text-decoration: none;
+    box-shadow: 0px 10px 20px -5px rgba(0,0,0, 0.3);
+}
+
+.links__link:last-of-type {
+  margin-right: 0;
 }
 
 .quiz {
-    margin-top: 20px;
-}
-
-.quiz__link {
-    display: block;
-    color: #333;
-}
-
-.quiz__link:visited {
-    color: #333;
-}
-
-.quiz__link:hover {
-    text-decoration: none;
+    margin: 20px;
+    color: white;
 }
 
 .question {
     margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding-left: 20px;
 }
 
 .question__text {
     font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .question__answer {
     display: block;
+    margin: 10px;
 }
 
 #submit {
-	font-family: sans-serif;
-	font-size: 20px;
-	background-color: #279;
-	color: #fff;
-	border: 0px;
-	border-radius: 3px;
-	padding: 20px;
-	cursor: pointer;
-	margin-bottom: 20px;
+  cursor: pointer;
+  padding: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #2673ef;
+  color: white;
+  text-align: center;
+  transition: all .3s ease;
+  margin-top: 10px;
+  text-decoration: none;
 }
 
 #submit:disabled {
@@ -51,4 +116,14 @@ body {
 
 #submit:hover {
 	background-color: #38a;
+  box-shadow: 0px 10px 20px -5px rgba(0,0,0, 0.3);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
 }

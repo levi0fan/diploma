@@ -2,36 +2,37 @@ html
   include blocks/head
 
   body
-    h1= title
+    .container
+      .head
+        .head__title= title
+          .links
+             a.links__link(href="/practice")= 'Вернуться к списку тестов'
+             a.links__link(href=`/theory/${name}`)= 'Почитать теорию'
 
-    a.quiz__link(href="/practice")= 'Вернуться к списку тестов'
-    a.quiz__link(href=`/theory/${name}`)= 'Почитать теорию'
+      form.quiz(action=`/practice/${name}/result` method="post")
+          each quest, idx in questions
+              div.question
+                  .question__text!= quest.text
+                  each answer in quest.answers
+                      label.question__answer
+                          input(type="radio" name=`question_${idx}` value= answer.code)
+                          = answer.text
+          button(id="submit" type="submit" disabled)= 'Проверить результат'
 
-    form.quiz(action=`/practice/${name}/result` method="post")
-        each quest, idx in questions
-            div.question
-                .question__text!= quest.text
-                each answer in quest.answers
-                    label.question__answer
-                        input(type="radio" name=`question_${idx}` value= answer.code)
-                        = answer.text
-        button(id="submit" type="submit" disabled)= 'Проверить результат'
-    
 
-    script.
-        const inputs = document.querySelectorAll('input');
-        const submit = document.querySelector('#submit');
-        const quesions = document.querySelectorAll('div.question');
-        const form = document.querySelector('form.quiz');
+      script.
+          const inputs = document.querySelectorAll('input');
+          const submit = document.querySelector('#submit');
+          const quesions = document.querySelectorAll('div.question');
+          const form = document.querySelector('form.quiz');
 
-        console.log('quesions.length', quesions.length);
+          console.log('quesions.length', quesions.length);
 
-        form.addEventListener('click', function(event) {
-            const checked = document.querySelectorAll('input[type=radio]:checked');
-            console.log('checked', checked.length);
+          form.addEventListener('click', function(event) {
+              const checked = document.querySelectorAll('input[type=radio]:checked');
+              console.log('checked', checked.length);
 
-            if (checked.length === quesions.length) {
-                submit.disabled = false;
-            }
-        });
-
+              if (checked.length === quesions.length) {
+                  submit.disabled = false;
+              }
+          });

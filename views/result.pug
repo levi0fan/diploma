@@ -2,28 +2,30 @@ html
   include blocks/head
 
   body
-    h1= title
+    .container
+      .head
+        .head__title= title
 
-    .result
-        - let counter = 0
-        each quest in questions
-            .result__clause
-                .result__question
-                    div.result__question-text!= quest.text
-                    span.result__answer-label= 'Ваш вариант:'
-                    span.result__answer= quest.selectedText
+      .result
+          - let counter = 0
+          each quest in questions
+              .result__clause
+                  .result__question
+                      div.result__question-text!= quest.text
+                      span.result__answer-label= 'Ваш вариант:'
+                      span.result__answer= quest.selectedText
 
-                - const result = quest.correct === quest.selected
-                .result__verdict
-                    if result
-                        - counter++
-                        span.result__correct= 'Правильный ответ'
-                    else
-                        span.result__wrong= 'Неверный ответ'
-        if counter === questions.length
-            .key_point!= `Хорошая работа. Не забудь повторить теорию. <a href="/theory/${name}">${theory}</a>`
-        else
-          if counter > 6
-            .key_point!= `Неплохо. Но можно и лучше. Почитай-ка теорию. <a href="/theory/${name}">${theory}</a>`
+                  - const result = quest.correct === quest.selected
+                  .result__verdict
+                      if result
+                          - counter++
+                          span.result__correct= 'Правильный ответ'
+                      else
+                          span.result__wrong= 'Неверный ответ'
+          if counter === questions.length
+              .key_point!= `Хорошая работа. Не забудь повторить теорию. <a href="/theory/${name}", class= links__link>${theory}</a>`
           else
-            .key_point!= `Слабовато. Поготовься по лучше. Вот ссылка на тему. <a href="/theory/${name}">${theory}</a>`
+            if counter > 6
+              .key_point!= `Неплохо. Но можно и лучше. Почитай-ка теорию. <a href="/theory/${name}", class= links__link>${theory}</a>`
+            else
+              .key_point!= `Слабовато. Поготовься по лучше. Вот ссылка на тему. <a href="/theory/${name}", class= links__link>${theory}</a>`
