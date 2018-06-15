@@ -100,27 +100,30 @@ body {
 #submit {
   cursor: pointer;
   padding: 20px;
-  margin-right: 20px;
   font-size: 20px;
-  border-radius: 3px;
+  border: 1px solid white;
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-color: #2673ef;
   color: white;
   text-align: center;
-  transition: all .3s ease;
   margin-top: 10px;
   text-decoration: none;
+  box-sizing: border-box;
+  transition: all .4s ease;
+}
+
+#submit:hover {
+  box-shadow: 0px 10px 20px -5px rgba(0,0,0, 0.3);
+  background-color: white;
+  color: #2673ef;
 }
 
 #submit:disabled {
     opacity: .5;
-}
-
-#submit:hover {
-	background-color: #38a;
-  box-shadow: 0px 10px 20px -5px rgba(0,0,0, 0.3);
+    pointer-events: none;
 }
 
 a {

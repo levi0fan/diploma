@@ -2,21 +2,25 @@ html
     include blocks/head
 
     body
-        h1= title
-        p= info
-
         div.feedback
-            form.feedback__form(method="post" onsubmit="return checkForm(this);")
-                label(for="feedback__name") Имя:
-                    input#feedback__name(type="text" placeholder="Введите ваше имя" name="name")
-                
-                label(for="feedback__email") Email:
-                    input#feedback__email(type="text" placeholder="Введите ваш email" name="email")
-                
-                label(for="feedback__message") Ваше сообщение:
-                    textarea#feedback__message(placeholder="Введите текст" name="message")
+            .head
+                h1.head__title= title
+                p.head__info= info
 
-                button#feedback__submit.btn.btn-primary(type='submit') Оставить сообщение
+            form.feedback__form(method="post" onsubmit="return checkForm(this);")
+                label.feedback__label(for="feedback__name")
+                    .feedback__title Имя:
+                    input#feedback__name.feedback__input(type="text" placeholder="Введите ваше имя" name="name")
+                
+                label.feedback__label(for="feedback__email")
+                    .feedback__title Email:
+                    input#feedback__email.feedback__input(type="text" placeholder="Введите ваш email" name="email")
+                
+                label.feedback__label(for="feedback__message")
+                    .feedback__title Ваше сообщение:
+                    textarea#feedback__message.feedback__input(placeholder="Введите текст" name="message")
+
+                button#feedback__submit(type='submit') Оставить сообщение
 
         script.
             const form = document.forms[0];

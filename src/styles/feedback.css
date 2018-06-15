@@ -6,8 +6,44 @@ body {
     font-family: sans-serif;
 }
 
+.head {
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.head__title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.head__info {
+    font-size: 22px;
+    text-align: center;
+}
+
+.feedback__result {
+    margin: 0 40px;
+}
+
+.feedback__result-text {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
 .feedback {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2673ef;
+    padding: 40px 0;
+    border-radius: 10px;
+    margin-top: 30px;
 }
 
 .feedback__form {
@@ -15,4 +51,90 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.feedback__label {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.feedback__title {
+    color: white;
+    width: 160px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.feedback__input {
+    border: 1px solid white;
+    color: black;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+textarea.feedback__input  {
+    height: 150px;
+}
+
+.feedback__input:focus {
+    outline: none;
+}
+
+#feedback__submit {
+    cursor: pointer;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #2673ef;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all .4s ease;
+}
+
+#feedback__submit:hover {
+    box-shadow: 0px 10px 20px -5px rgba(0,0,0, 0.3);
+    background-color: white;
+    color: #2673ef;
+}
+
+#feedback__submit:focus {
+    outline: none;
+}
+
+.feedback__link {
+    width: 200px;
+    height: 70px;
+    margin-right: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    transition: all .3s ease;
+    text-decoration: none;
+    margin: 10px auto 0;
+}
+
+.feedback__link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.feedback__link:hover {
+    text-decoration: none;
+    box-shadow: 0px 10px 20px -5px rgba(0,0,0, 0.3);
 }
