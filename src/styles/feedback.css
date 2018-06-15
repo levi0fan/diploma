@@ -3,6 +3,9 @@
 
 body {
     background-color: #57b0ff;
+}
+
+.container{
     display: flex;
     justify-content: center;
     align-items: flex-start;

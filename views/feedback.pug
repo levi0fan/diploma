@@ -3,70 +3,71 @@ html
 
     body
         include blocks/map_1.pug
-        div.feedback
-            .head
-                h1.head__title= title
-                p.head__info= info
+        .container
+          div.feedback
+              .head
+                  h1.head__title= title
+                  p.head__info= info
 
-            form.feedback__form(method="post" onsubmit="return checkForm(this);")
-                label.feedback__label(for="feedback__name")
-                    .feedback__title Имя:
-                    input#feedback__name.feedback__input(type="text" placeholder="Введите ваше имя" name="name")
+              form.feedback__form(method="post" onsubmit="return checkForm(this);")
+                  label.feedback__label(for="feedback__name")
+                      .feedback__title Имя:
+                      input#feedback__name.feedback__input(type="text" placeholder="Введите ваше имя" name="name")
 
-                label.feedback__label(for="feedback__email")
-                    .feedback__title Email:
-                    input#feedback__email.feedback__input(type="text" placeholder="Введите ваш email" name="email")
+                  label.feedback__label(for="feedback__email")
+                      .feedback__title Email:
+                      input#feedback__email.feedback__input(type="text" placeholder="Введите ваш email" name="email")
 
-                label.feedback__label(for="feedback__message")
-                    .feedback__title Ваше сообщение:
-                    textarea#feedback__message.feedback__input(placeholder="Введите текст" name="message")
+                  label.feedback__label(for="feedback__message")
+                      .feedback__title Ваше сообщение:
+                      textarea#feedback__message.feedback__input(placeholder="Введите текст" name="message")
 
-                button#feedback__submit(type='submit') Оставить сообщение
+                  button#feedback__submit(type='submit') Оставить сообщение
 
-        script.
-            const form = document.forms[0];
-            const submit = document.querySelector('#feedback__submit');
+          script.
+              const form = document.forms[0];
+              const submit = document.querySelector('#feedback__submit');
 
-            const onChange = function(event) {
+              const onChange = function(event) {
 
-            };
+              };
 
-            form.addEventListener('keypress', onChange);
+              form.addEventListener('keypress', onChange);
 
-            function checkForm(form) {
-                let return_value = true;
-                // регулярное выражение, для проверки почтового ящика
-                const reg_mail = /[0-9a-z_]+@[0-9a-z_^.]+.[a-z]{2,3}/i;
-                // регулярное выражение, для проверки отправителя
-                const regName = /[a-z]+/i;
+              function checkForm(form) {
+                  let return_value = true;
+                  // регулярное выражение, для проверки почтового ящика
+                  const reg_mail = /[0-9a-z_]+@[0-9a-z_^.]+.[a-z]{2,3}/i;
+                  // регулярное выражение, для проверки отправителя
+                  const regName = /[a-z]+/i;
 
-                const { name, email, message } = form;
+                  const { name, email, message } = form;
 
-                // объявляем переменную куда будет заносится текст сообщения
-                var errorMsg = 'Не корректно заполнены поля: ';
+                  // объявляем переменную куда будет заносится текст сообщения
+                  var errorMsg = 'Не корректно заполнены поля: ';
 
-                //проверка поля отправитель
-                if (!name || regName.exec(name.value) == null) {
-                    errorMsg += "\n — имя ";
-                    return_value = false;
-                }
+                  //проверка поля отправитель
+                  if (!name || regName.exec(name.value) == null) {
+                      errorMsg += "\n — имя ";
+                      return_value = false;
+                  }
 
-                //проверка поля почтовый ящик
-                if (reg_mail.exec(email.value) == null) {
-                    errorMsg += "\n — email ";
-                    return_value = false;
-                }
+                  //проверка поля почтовый ящик
+                  if (reg_mail.exec(email.value) == null) {
+                      errorMsg += "\n — email ";
+                      return_value = false;
+                  }
 
-                //проверка поля текст сообщения
-                if (!message.value) {
-                    errorMsg += "\n — сообщение ";
-                    return_value = false;
-                }
+                  //проверка поля текст сообщения
+                  if (!message.value) {
+                      errorMsg += "\n — сообщение ";
+                      return_value = false;
+                  }
 
-                //проверка на наличие ошибок, если возникла ошибка ввыводим текст сообщения
-                if (!return_value) {
-                    alert(errorMsg);
-                }
+                  //проверка на наличие ошибок, если возникла ошибка ввыводим текст сообщения
+                  if (!return_value) {
+                      alert(errorMsg);
+                  }
 
-                return return_value;
-            }
+                  return return_value;
+              }
