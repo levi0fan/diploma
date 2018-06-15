@@ -3,13 +3,13 @@
 
 body {
     background-color: #57b0ff;
+    font-family: sans-serif;
 }
 
 .container{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    font-family: sans-serif;
 }
 
 .head {
