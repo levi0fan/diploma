@@ -1,0 +1,28 @@
+.map{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #2673ef;
+  position: fixed left;
+}
+
+.map__link{
+  text-align: center;
+  /* border: 1px solid white; */
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #57b0ff;
+  margin: 20px;
+}
+
+.map__link:hover{
+  box-shadow: 0px 10px 20px -5px rgba(0,0,0, 0.3);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

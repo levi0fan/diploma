@@ -2,6 +2,7 @@ html
     include blocks/head
 
     body
+        include blocks/map_1.pug
         div.feedback
             .head
                 h1.head__title= title
@@ -11,11 +12,11 @@ html
                 label.feedback__label(for="feedback__name")
                     .feedback__title Имя:
                     input#feedback__name.feedback__input(type="text" placeholder="Введите ваше имя" name="name")
-                
+
                 label.feedback__label(for="feedback__email")
                     .feedback__title Email:
                     input#feedback__email.feedback__input(type="text" placeholder="Введите ваш email" name="email")
-                
+
                 label.feedback__label(for="feedback__message")
                     .feedback__title Ваше сообщение:
                     textarea#feedback__message.feedback__input(placeholder="Введите текст" name="message")
@@ -40,7 +41,7 @@ html
                 const regName = /[a-z]+/i;
 
                 const { name, email, message } = form;
-                
+
                 // объявляем переменную куда будет заносится текст сообщения
                 var errorMsg = 'Не корректно заполнены поля: ';
 
