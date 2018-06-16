@@ -3,10 +3,11 @@ html
 
   body
     include blocks/map_1.pug
-    .feedback
-      .head
-        .head__title= title
+    .container
+      .feedback
+        .head
+          .head__title= title
 
-      .feedback__result
-        .feedback__result-text= message
-        a.feedback__link(href="/") Вернуться на главную
+        .feedback__result
+          .feedback__result-text= message
+          a.feedback__link(href="/") Вернуться на главную
