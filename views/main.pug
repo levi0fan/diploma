@@ -18,6 +18,11 @@ html
           .links
             each link in links
               a.links__link(href=link.href)= link.name
+          .info
+            each item in pack
+              case item.type
+                when 'p'
+                  .info__text= item.text
 
       script(
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
