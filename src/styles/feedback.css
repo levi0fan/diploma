@@ -2,7 +2,7 @@
 @import url('./blocks/map.css');
 
 body {
-    background-color: #57b0ff;
+    background-color: #877c68;
     font-family: sans-serif;
 }
 
@@ -46,7 +46,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #2673ef;
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 40px 0;
     border-radius: 10px;
     margin-top: 80px;
@@ -99,7 +99,7 @@ textarea.feedback__input  {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #2673ef;
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
     text-align: center;
     margin-top: 10px;
@@ -110,8 +110,8 @@ textarea.feedback__input  {
 
 #feedback__submit:hover {
     box-shadow: 0px 10px 20px -5px rgba(0,0,0, 0.3);
-    background-color: white;
-    color: #2673ef;
+    background-color: #877c68;
+    color: white;
 }
 
 #feedback__submit:focus {

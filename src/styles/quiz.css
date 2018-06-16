@@ -3,7 +3,7 @@
 @import url('./blocks/map.css');
 
 body {
-  background-color: #57b0ff;
+  background-color: #877c68;
   display: flex;
   align-items: flex-start;
   font-family: sans-serif;
@@ -12,7 +12,7 @@ body {
 .container {
   max-width: 1110px;
   min-width: 900px;
-  background-color: #2673ef;
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -107,7 +107,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #2673ef;
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
   text-align: center;
   margin-top: 10px;
@@ -118,8 +118,8 @@ body {
 
 #submit:hover {
   box-shadow: 0px 10px 20px -5px rgba(0,0,0, 0.3);
-  background-color: white;
-  color: #2673ef;
+  background-color: #877c68;
+  color: white;
 }
 
 #submit:disabled {
