@@ -8,7 +8,7 @@ html
             source(src="/video/cover/numbers.mp4" type="video/mp4")
             source(src="/video/cover/numbers.webm" type="video/webm")
           .poster.hidden
-            img(src="/video/cover/numbers.jpg" alt="Numbers")
+            img(src="/img/cover/numbers.jpg" alt="Numbers")
 
       .container-wrapper
         img.logo(src="/img/Logo.png", alt="МКАГ лого")
@@ -67,14 +67,11 @@ html
             videoWidth,
             videoHeight;
 
-            // console.log(windowHeight);
-
             $(element).each(function(){
                 var videoAspectRatio = $(this).data('height')/$(this).data('width');
 
                 //- $(this).width(windowWidth);
 
-                //- if (videoAspectRatio < 0.56) {
                 if(windowWidth < 1000){
                     videoHeight = windowHeight;
                     videoWidth = videoHeight / videoAspectRatio;

@@ -31,7 +31,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('img', function() {
-    return gulp.src(`${folders.img.src}*`)
+    return gulp.src(`${folders.img.src}**/*`)
         .pipe(gulp.dest(folders.img.dist));
 });
 
@@ -42,7 +42,7 @@ gulp.task('video', function() {
 
 gulp.task('watch', ['css', 'img', 'video'], function(){
     gulp.watch(`${folders.css.src}**/*.css`, ['css']);
-    gulp.watch(`${folders.img.src}*`, ['img']);
+    gulp.watch(`${folders.img.src}**/*`, ['img']);
     gulp.watch(`${folders.video.src}**/*`, ['video']);
 });
 
