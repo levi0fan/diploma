@@ -18,6 +18,10 @@ const folders = {
     src: `${srcPath}/img/`,
     dist: `${staticPath}/img/`,
   },
+  video: {
+    src: `${srcPath}/video/`,
+    dist: `${staticPath}/video/`,
+  },
 };
 
 gulp.task('css', function() {
@@ -31,9 +35,15 @@ gulp.task('img', function() {
         .pipe(gulp.dest(folders.img.dist));
 });
 
-gulp.task('watch', ['css', 'img'], function(){
-    gulp.watch(`${folders.css.src}**/*.css`, ['css']);
-    gulp.watch(`${folders.img.src}*`, ['img']);
+gulp.task('video', function() {
+  return gulp.src(`${folders.video.src}**/*`)
+      .pipe(gulp.dest(folders.video.dist));
 });
 
-gulp.task('default', ['css', 'img']);
+gulp.task('watch', ['css', 'img', 'video'], function(){
+    gulp.watch(`${folders.css.src}**/*.css`, ['css']);
+    gulp.watch(`${folders.img.src}*`, ['img']);
+    gulp.watch(`${folders.video.src}**/*`, ['video']);
+});
+
+gulp.task('default', ['css', 'img', 'video']);
