@@ -1,5 +1,5 @@
 @import url('./reset.css');
-@import url('./blocks/map.css');
+@import url('./blocks/nav.css');
 
 body {
   background-color: #877c68;
@@ -42,7 +42,7 @@ body {
     margin-bottom: 20px;
     border: 1px solid white;
     border-radius: 20px;
-    padding-left: 20px;
+    padding: 10px 0px 10px 20px;
 }
 
 .result__question {

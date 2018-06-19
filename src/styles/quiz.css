@@ -1,12 +1,14 @@
 @import url('./reset.css');
 @import url('./blocks/header.css');
-@import url('./blocks/map.css');
+@import url('./blocks/nav.css');
 
 body {
-  background-color: #877c68;
+  background-color: rgb(195, 204, 207);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   font-family: sans-serif;
+  flex-direction: column;
+  padding-top: 100px;
 }
 
 .container {
@@ -16,7 +18,7 @@ body {
   border-radius: 30px;
   display: flex;
   flex-direction: column;
-  margin: 80px auto 50px;
+  margin: 40px auto 50px;
   flex-wrap: wrap;
   justify-content: center;
   padding: 40px 0;
@@ -107,7 +109,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: inherit;
   color: white;
   text-align: center;
   margin-top: 10px;
@@ -118,7 +120,7 @@ body {
 
 #submit:hover {
   box-shadow: 0px 10px 20px -5px rgba(0,0,0, 0.3);
-  background-color: #877c68;
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
 }
 

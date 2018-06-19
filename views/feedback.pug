@@ -2,11 +2,12 @@ html
     include blocks/head
 
     body
-        include blocks/map_1.pug
+        include blocks/nav.pug
         .container
           div.feedback
               .head
                   h1.head__title= title
+                  hr
                   p.head__info= info
 
               form.feedback__form(method="post" onsubmit="return checkForm(this);")

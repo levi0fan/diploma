@@ -1,8 +1,8 @@
 @import url('./reset.css');
-@import url('./blocks/map.css');
+@import url('./blocks/nav.css');
 
 body {
-    background-color: #877c68;
+    background-color: rgb(195, 204, 207);
     font-family: sans-serif;
 }
 
@@ -99,7 +99,7 @@ textarea.feedback__input  {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: inherit;
     color: white;
     text-align: center;
     margin-top: 10px;
@@ -110,7 +110,7 @@ textarea.feedback__input  {
 
 #feedback__submit:hover {
     box-shadow: 0px 10px 20px -5px rgba(0,0,0, 0.3);
-    background-color: #877c68;
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
 }
 

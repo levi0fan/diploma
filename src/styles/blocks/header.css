@@ -1,3 +1,17 @@
 .header {
-    background-color: purple;
+display: flex;
+flex-direction: column;
+color: red;
+font-size: 30px;
+}
+
+.header__font{
+  text-align: center;
+}
+
+.header__logo{
+  display: block;
+  width: 118px;
+  height: 166px;
+  margin: 0 auto;
 }

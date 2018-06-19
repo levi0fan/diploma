@@ -2,11 +2,15 @@ html
   include blocks/head
 
   body
-    include blocks/map_1.pug
+    include blocks/nav.pug
+    include blocks/header
     .container
       .head
         h1.head__title= title
+        hr
         p.head__info= info
       .links
         each link in links
             a.links__link(class ='line' href=link.href)= link.name
+    
+    include blocks/footer

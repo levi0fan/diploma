@@ -2,10 +2,13 @@ html
   include blocks/head
 
   body
-    include blocks/map_2.pug
+    - const backLink= '/theory'
+    include blocks/nav.pug
+    include blocks/header.pug
     .container
       .head
         .head__title= title
+        hr
       .content
         each item in content
           case item.type

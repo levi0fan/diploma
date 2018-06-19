@@ -2,11 +2,11 @@ html
   include blocks/head
 
   body
-    include blocks/map_2.pug
+    include blocks/nav.pug
     .container
       .head
         .head__title= title
-
+        hr
       .result
           - let counter = 0
           each quest in questions

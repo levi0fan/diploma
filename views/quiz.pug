@@ -2,12 +2,14 @@ html
   include blocks/head
 
   body
-    include blocks/map_2.pug
+    - const backLink= '/practice'
+    include blocks/nav.pug
+    include blocks/header.pug
     .container
       .head
         .head__title= title
-          .links
-             a.links__link(href="/practice")= 'Вернуться к списку тестов'
+            hr
+            .links
              a.links__link(href=`/theory/${name}`)= 'Почитать теорию'
 
       form.quiz(action=`/practice/${name}/result` method="post")

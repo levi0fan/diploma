@@ -11,7 +11,7 @@ html
             img(src="/img/cover/numbers.jpg" alt="Numbers")
 
       .container-wrapper
-        img.logo(src="/img/Logo.png", alt="МКАГ лого")
+        include blocks/header
         .container
           .head
             h1.head__title= title
@@ -23,6 +23,7 @@ html
               case item.type
                 when 'p'
                   .info__text= item.text
+        include blocks/footer.pug
 
       script(
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -46,13 +47,11 @@ html
 
         });
 
-        -// function scaleVideoContainer() {
-
-            var height = $(window).height();
-            var unitHeight = parseInt(height) + 'px';
-            $('.homepage-hero-module').css('height',unitHeight);
-
-        }
+        //- function scaleVideoContainer() {
+            //- var height = $(window).height();
+            //- var unitHeight = parseInt(height) + 'px';
+            //- $('.homepage-hero-module').css('height',unitHeight);
+        //- }
 
         function initBannerVideoSize(element){
 
