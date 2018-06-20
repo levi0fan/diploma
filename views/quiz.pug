@@ -21,7 +21,8 @@ html
                           input.question__checkbox(type="radio" name=`question_${idx}` value= answer.code)
                           = answer.text
           button(id="submit" type="submit" disabled)= 'Проверить результат'
-
+    include blocks/footer.pug
+    include blocks/lifter.pug
 
       script.
           const inputs = document.querySelectorAll('input');

@@ -1,0 +1,10 @@
+.lifter {
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.lifter img {
+  height: 50px;
+}

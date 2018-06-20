@@ -3,6 +3,7 @@ html
 
   body
     include blocks/nav.pug
+    include blocks/header.pug
     .container
       .head
         .head__title= title
@@ -30,3 +31,5 @@ html
               .key_point!= `Неплохо. Но можно и лучше. Почитай-ка теорию. <a href="/theory/${name}", class= links__link>${theory}</a>`
             else
               .key_point!= `Слабовато. Поготовься по лучше. Вот ссылка на тему. <a href="/theory/${name}", class= links__link>${theory}</a>`
+    include blocks/footer.pug
+    include blocks/lifter.pug

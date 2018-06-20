@@ -3,6 +3,7 @@ html
 
     body
         include blocks/nav.pug
+        include blocks/header.pug
         .container
           div.feedback
               .head
@@ -24,6 +25,7 @@ html
                       textarea#feedback__message.feedback__input(placeholder="Введите текст" name="message")
 
                   button#feedback__submit(type='submit') Оставить сообщение
+        include blocks/footer.pug
 
           script.
               const form = document.forms[0];

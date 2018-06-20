@@ -24,4 +24,5 @@ html
               li.content__line= item.text
             when 'img'
               img.content__img(src= item.link alt= item.desc)
-    -//include blocks/replace.pug
+      include blocks/lifter.pug
+    include blocks/footer.pug
