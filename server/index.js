@@ -22,6 +22,7 @@ function server() {
     app.use('/theory', routes.theory);
     app.use('/feedback', routes.feedback);
     app.use('/practice', routes.practice);
+    app.use('/media', routes.media);
     
     app.listen(port, function() {
         console.log(`Server runs on http://localhost:${port}`);
