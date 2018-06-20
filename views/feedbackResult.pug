@@ -3,6 +3,7 @@ html
 
   body
     include blocks/nav.pug
+    include blocks/header.pug
     .container
       .feedback
         .head
@@ -12,3 +13,4 @@ html
         .feedback__result
           .feedback__result-text= message
           a.feedback__link(href="/") Вернуться на главную
+    include blocks/footer.pug
