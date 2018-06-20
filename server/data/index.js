@@ -4,6 +4,7 @@ const themes = require('./themes');
 const practice = require('./practice');
 const quizes = require('./quizes');
 const feedback = require('./feedback');
+const media = require('./media');
 
 module.exports = {
     main,
@@ -12,4 +13,5 @@ module.exports = {
     practice,
     quizes,
     feedback,
+    media,
 };

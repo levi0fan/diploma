@@ -1,0 +1,23 @@
+html
+  include blocks/head
+
+  body
+    include blocks/nav.pug
+    include blocks/header.pug
+    .container
+      .head
+        .head__title= title
+        hr
+      .content
+        each item in content
+          case item.type
+            when 'header'
+              .content__header= item.text
+            when 'parag'
+              .content__parag= item.text
+            when 'hr'
+              hr
+            when 'video'
+                iframe.content__video(width="560" height="315" src= item.link frameborder="0" encrypted-media allowfullscreen)
+    include blocks/lifter.pug
+    include blocks/footer.pug

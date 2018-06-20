@@ -6,3 +6,5 @@ const data = require('../data');
 router.get('/', function(req, res) {
     res.render('media', data.media);
 });
+
+module.exports = router;
